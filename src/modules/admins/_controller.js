@@ -2,6 +2,7 @@ const express = require("express");
 const loginAdmin = require("./login-admin");
 const postAdmin = require("./post-admin");
 const getAdmins = require("./get-admins");
+const showAdmins = require("./show-admin");
 
 const login_admins = async (req, res) => {
   try {
@@ -32,8 +33,19 @@ const get_admins = async (req, res) => {
   }
 };
 
+const show_admins = async (req, res) => {
+  try {
+    const result = await showAdmins({ params: req.params.id });
+
+    res.json(result);
+  } catch (error) {
+    res.json(error);
+  }
+};
+
 module.exports = {
   login_admins,
   post_admins,
   get_admins,
+  show_admins,
 };
