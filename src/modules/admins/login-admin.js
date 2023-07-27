@@ -1,6 +1,7 @@
 const { compareSync } = require("bcryptjs");
-// const jwt = require("jsonwebtoken");
+const jwt = require("jsonwebtoken");
 const Admins = require("./Admins");
+const config = require("../../shared/config");
 
 const loginAdmin = async ({ body }) => {
   const { username, password } = body;
@@ -17,7 +18,11 @@ const loginAdmin = async ({ body }) => {
     return "Password incorrect.";
   }
 
-  return { data: "You are logged" };
+  const token = jwt.sign({ id: existed._id }, config.jwt.secret, {
+    expiresIn: "1d",
+  });
+
+  return { token };
 };
 
 module.exports = loginAdmin;

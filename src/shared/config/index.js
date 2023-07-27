@@ -9,6 +9,9 @@ const config = {
     host: process.env.DB_HOST,
     port: process.env.DB_PORT,
   },
+  jwt: {
+    secret: process.env.JWT_SECRET,
+  },
 };
 
 module.exports = config;
