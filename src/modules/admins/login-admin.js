@@ -18,9 +18,13 @@ const loginAdmin = async ({ body }) => {
     return "Password incorrect.";
   }
 
-  const token = jwt.sign({ id: existed._id }, config.jwt.secret, {
-    expiresIn: "1d",
-  });
+  const token = jwt.sign(
+    { id: existed._id, isSuper: existed.is_super },
+    config.jwt.secret,
+    {
+      expiresIn: "1d",
+    }
+  );
 
   return { token };
 };
