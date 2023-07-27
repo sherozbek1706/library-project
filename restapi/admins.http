@@ -8,3 +8,19 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5
   "username": "sherozbek.17",
   "password": "1234"
 }
+
+
+
+
+
+###create admin
+
+POST http://localhost:5000/admins
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5YTgwZGQ2OTczNCIsImlhdCI6MTY5MDQ1NDk1MCwiZXhwIjoxNjkwNTQxMzUwfQ.VzEaEipGBSv_U7yjjNsOKXaIatbwPDU0JHmAifksRbo
+
+{
+  "full_name": "Jurayev Doston",  
+  "username": "dostonbek",
+  "password": "1234"
+}

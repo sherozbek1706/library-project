@@ -1,8 +1,9 @@
 const isLoggedIn = require("../../shared/auth/isloggedIn");
-const { login_admins } = require("./_controller");
+const { login_admins, post_admins } = require("./_controller");
 
 const router = require("express").Router();
 
-router.post("/login", isLoggedIn, login_admins);
+router.post("/login", login_admins);
+router.post("/admins", isLoggedIn, post_admins);
 
 module.exports = router;
