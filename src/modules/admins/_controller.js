@@ -4,6 +4,7 @@ const postAdmin = require("./post-admin");
 const getAdmins = require("./get-admins");
 const showAdmins = require("./show-admin");
 const editAdmin = require("./edit-admin");
+const deleteAdmins = require("./delete-admin");
 
 const login_admins = async (req, res) => {
   try {
@@ -66,10 +67,26 @@ const edit_admins = async (req, res) => {
   }
 };
 
+/**
+ *
+ * @param {express.Request} req
+ * @param {express.Response} res
+ */
+const delete_admins = async (req, res) => {
+  try {
+    const result = await deleteAdmins({ params: req.params.id });
+
+    res.json(result);
+  } catch (error) {
+    res.json(error);
+  }
+};
+
 module.exports = {
   login_admins,
   post_admins,
   get_admins,
   show_admins,
   edit_admins,
+  delete_admins,
 };

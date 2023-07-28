@@ -57,6 +57,15 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5
 
 
 
+###patch admins
+
+DELETE  http://localhost:5000/admins/64c40385b8391f94fd378488
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5YTgwZGQ2OTczNCIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MDU1OTg2MCwiZXhwIjoxNjkwNjQ2MjYwfQ.yL4whOaI2947tSwkQY0tqtlomjovBrpnDosZ3CvqhiE
+
+
+
+
 
 
 
