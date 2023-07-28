@@ -1,6 +1,7 @@
 const express = require("express");
 const postBorrowers = require("./post-borrower");
 const getBorrower = require("./get-borrower");
+const showBorrower = require("./show-borrower");
 
 const post_borrowers = async (req, res) => {
   try {
@@ -22,7 +23,18 @@ const get_borrowers = async (req, res) => {
   }
 };
 
+const show_borrowers = async (req, res) => {
+  try {
+    const result = await showBorrower({ params: req.params.id });
+
+    res.json(result);
+  } catch (error) {
+    res.json(error);
+  }
+};
+
 module.exports = {
   post_borrowers,
   get_borrowers,
+  show_borrowers,
 };

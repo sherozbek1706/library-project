@@ -1,5 +1,5 @@
 ###
-POST http://localhost:5000/borrower
+POST http://localhost:5000/borrowers
 Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzQwMzg1YjgzOTFmOTRmZDM3ODQ4OCIsImlzU3VwZXIiOmZhbHNlLCJpYXQiOjE2OTA1Njg4NjEsImV4cCI6MTY5MDY1NTI2MX0.WLhkHjDHvEBnp14jps5SDIgto3J4B8K8hC-fWd3cI2M
 
@@ -13,6 +13,14 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzQwMzg1YjgzOTFm
 
 
 ###
-GET http://localhost:5000/borrower
+GET http://localhost:5000/borrowers
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzQwMzg1YjgzOTFmOTRmZDM3ODQ4OCIsImlzU3VwZXIiOmZhbHNlLCJpYXQiOjE2OTA1Njg4NjEsImV4cCI6MTY5MDY1NTI2MX0.WLhkHjDHvEBnp14jps5SDIgto3J4B8K8hC-fWd3cI2M
+
+
+
+
+###
+GET http://localhost:5000/borrowers/64c41084a98be9bd61ecc285
 Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzQwMzg1YjgzOTFmOTRmZDM3ODQ4OCIsImlzU3VwZXIiOmZhbHNlLCJpYXQiOjE2OTA1Njg4NjEsImV4cCI6MTY5MDY1NTI2MX0.WLhkHjDHvEBnp14jps5SDIgto3J4B8K8hC-fWd3cI2M
