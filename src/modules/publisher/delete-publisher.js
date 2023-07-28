@@ -1,6 +1,6 @@
 const Publisher = require("./Publisher");
 
-const showPublisher = async ({ params }) => {
+const deletePublish = async ({ params }) => {
   if (params.length !== 24) {
     return { error: "Publisher Not Found" };
   }
@@ -11,7 +11,13 @@ const showPublisher = async ({ params }) => {
     return { error: "Publisher Not Found" };
   }
 
-  return { data: exist };
+  const deletedPublisher = await Publisher.findByIdAndUpdate(
+    params,
+    { is_deleted: true },
+    { new: true }
+  );
+
+  return { data: deletedPublisher };
 };
 
-module.exports = showPublisher;
+module.exports = deletePublish;

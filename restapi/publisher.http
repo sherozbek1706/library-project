@@ -1,0 +1,48 @@
+###
+POST http://localhost:5000/publisher
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzQwMzg1YjgzOTFmOTRmZDM3ODQ4OCIsImlzU3VwZXIiOmZhbHNlLCJpYXQiOjE2OTA1Njg4NjEsImV4cCI6MTY5MDY1NTI2MX0.WLhkHjDHvEBnp14jps5SDIgto3J4B8K8hC-fWd3cI2M
+
+{
+  "full_name": "raimov jaxon",
+  "address": "PUBLISHER",
+  "phone": "+99893340617"
+}
+
+
+
+
+###
+GET http://localhost:5000/publisher
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzQwMzg1YjgzOTFmOTRmZDM3ODQ4OCIsImlzU3VwZXIiOmZhbHNlLCJpYXQiOjE2OTA1Njg4NjEsImV4cCI6MTY5MDY1NTI2MX0.WLhkHjDHvEBnp14jps5SDIgto3J4B8K8hC-fWd3cI2M
+
+
+
+
+###
+GET http://localhost:5000/publisher/64c4247ba9322227570603cf
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzQwMzg1YjgzOTFmOTRmZDM3ODQ4OCIsImlzU3VwZXIiOmZhbHNlLCJpYXQiOjE2OTA1Njg4NjEsImV4cCI6MTY5MDY1NTI2MX0.WLhkHjDHvEBnp14jps5SDIgto3J4B8K8hC-fWd3cI2M
+
+
+
+###
+PATCH http://localhost:5000/publisher/64c4247ba9322227570603cf
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzQwMzg1YjgzOTFmOTRmZDM3ODQ4OCIsImlzU3VwZXIiOmZhbHNlLCJpYXQiOjE2OTA1Njg4NjEsImV4cCI6MTY5MDY1NTI2MX0.WLhkHjDHvEBnp14jps5SDIgto3J4B8K8hC-fWd3cI2M
+
+{
+  "full_name": "raimov jaxongir"
+}
+
+
+
+
+###
+DELETE http://localhost:5000/publisher/64c4236dd5b26a8e64c32393
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzQwMzg1YjgzOTFmOTRmZDM3ODQ4OCIsImlzU3VwZXIiOmZhbHNlLCJpYXQiOjE2OTA1Njg4NjEsImV4cCI6MTY5MDY1NTI2MX0.WLhkHjDHvEBnp14jps5SDIgto3J4B8K8hC-fWd3cI2M
+
+
+
