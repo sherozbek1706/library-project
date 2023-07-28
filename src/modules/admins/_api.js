@@ -11,7 +11,7 @@ const router = require("express").Router();
 
 router.post("/login", login_admins);
 router.post("/admins", isLoggedIn, post_admins);
-router.get("/admins", isLoggedIn, hasRole, get_admins);
+router.get("/admins", isLoggedIn, get_admins);
 router.get("/admins/:id", isLoggedIn, show_admins);
 
 module.exports = router;
