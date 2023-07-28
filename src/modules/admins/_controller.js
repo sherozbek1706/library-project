@@ -58,6 +58,8 @@ const edit_admins = async (req, res) => {
       user: req.user,
     });
 
+    console.log(result);
+
     res.json(result);
   } catch (error) {
     res.json(error);
