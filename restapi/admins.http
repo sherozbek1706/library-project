@@ -2,10 +2,9 @@
 
 POST http://localhost:5000/login
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5YTgwZGQ2OTczNCIsImlhdCI6MTY5MDQ1NDk1MCwiZXhwIjoxNjkwNTQxMzUwfQ.VzEaEipGBSv_U7yjjNsOKXaIatbwPDU0JHmAifksRbo
 
 {
-  "username": "sherozbek.17",
+  "username": "dostonbek",
   "password": "1234"
 }
 
@@ -17,7 +16,7 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5
 
 POST http://localhost:5000/admins
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5YTgwZGQ2OTczNCIsImlhdCI6MTY5MDQ1NDk1MCwiZXhwIjoxNjkwNTQxMzUwfQ.VzEaEipGBSv_U7yjjNsOKXaIatbwPDU0JHmAifksRbo
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5YTgwZGQ2OTczNCIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MDU1OTg2MCwiZXhwIjoxNjkwNjQ2MjYwfQ.yL4whOaI2947tSwkQY0tqtlomjovBrpnDosZ3CvqhiE
 
 {
   "full_name": "Jurayev Doston",  
@@ -32,14 +31,14 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5
 
 GET http://localhost:5000/admins
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5YTgwZGQ2OTczNCIsImlhdCI6MTY5MDQ1NDk1MCwiZXhwIjoxNjkwNTQxMzUwfQ.VzEaEipGBSv_U7yjjNsOKXaIatbwPDU0JHmAifksRbo
-
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5YTgwZGQ2OTczNCIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MDU1OTg2MCwiZXhwIjoxNjkwNjQ2MjYwfQ.yL4whOaI2947tSwkQY0tqtlomjovBrpnDosZ3CvqhiE
+# Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI1MTJkN2FhNWYxY2QyYWI2N2FjYiIsImlzU3VwZXIiOmZhbHNlLCJpYXQiOjE2OTA1NjAyNDgsImV4cCI6MTY5MDY0NjY0OH0.WRXhNLml2FQmMs-Zh3lyY2cx9JZY3AUyRFaxp2nFiQE
 
 
 
 ###show admins
 
-GET http://localhost:5000/admins/64c2451529d39a80dd69734
+GET http://localhost:5000/admins/64c24515289d39a80dd69734
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5YTgwZGQ2OTczNCIsImlhdCI6MTY5MDQ1NDk1MCwiZXhwIjoxNjkwNTQxMzUwfQ.VzEaEipGBSv_U7yjjNsOKXaIatbwPDU0JHmAifksRbo
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5YTgwZGQ2OTczNCIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MDU1OTg2MCwiZXhwIjoxNjkwNjQ2MjYwfQ.yL4whOaI2947tSwkQY0tqtlomjovBrpnDosZ3CvqhiE
 

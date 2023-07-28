@@ -19,9 +19,7 @@ const isLoggedIn = async (req, res, next) => {
 
     const decoded = jwt.verify(token, config.jwt.secret);
 
-    
-
-    req.user = decoded.id;
+    req.user = decoded;
 
     next();
   } catch (error) {
