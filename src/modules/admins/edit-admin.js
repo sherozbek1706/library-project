@@ -6,6 +6,7 @@ const editAdmin = async ({ body, params, user }) => {
   let id;
   if (params == "me") {
     id = user.id;
+    console.log(id);
     exist = await Admins.find({ _id: user.id });
   } else {
     if (params.length !== 24) {

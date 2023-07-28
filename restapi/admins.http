@@ -32,7 +32,6 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5
 GET http://localhost:5000/admins
 Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5YTgwZGQ2OTczNCIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MDU1OTg2MCwiZXhwIjoxNjkwNjQ2MjYwfQ.yL4whOaI2947tSwkQY0tqtlomjovBrpnDosZ3CvqhiE
-# Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI1MTJkN2FhNWYxY2QyYWI2N2FjYiIsImlzU3VwZXIiOmZhbHNlLCJpYXQiOjE2OTA1NjAyNDgsImV4cCI6MTY5MDY0NjY0OH0.WRXhNLml2FQmMs-Zh3lyY2cx9JZY3AUyRFaxp2nFiQE
 
 
 
@@ -48,10 +47,19 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5
 
 PATCH  http://localhost:5000/admins/me
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5YTgwZGQ2OTczNCIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MDU1OTg2MCwiZXhwIjoxNjkwNjQ2MjYwfQ.yL4whOaI2947tSwkQY0tqtlomjovBrpnDosZ3CvqhiE
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5YTgwZGQ2OTczNCIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MDU2NjA2MCwiZXhwIjoxNjkwNjUyNDYwfQ.MZU37wPpQDVSxfmTzApoUzy1wEMVgU8kXAEcRxFBamE
 
 {
   "username": "sherozbek.17",
   "password": "1234",
   "full_name": "Koko Joej"
 }
+
+
+
+
+
+
+###
+# Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI1MTJkN2FhNWYxY2QyYWI2N2FjYiIsImlzU3VwZXIiOmZhbHNlLCJpYXQiOjE2OTA1NjAyNDgsImV4cCI6MTY5MDY0NjY0OH0.WRXhNLml2FQmMs-Zh3lyY2cx9JZY3AUyRFaxp2nFiQE
+# Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5YTgwZGQ2OTczNCIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MDU1OTg2MCwiZXhwIjoxNjkwNjQ2MjYwfQ.yL4whOaI2947tSwkQY0tqtlomjovBrpnDosZ3CvqhiE
