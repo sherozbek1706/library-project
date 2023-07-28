@@ -1,0 +1,10 @@
+###
+POST http://localhost:5000/borrower
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzQwMzg1YjgzOTFmOTRmZDM3ODQ4OCIsImlzU3VwZXIiOmZhbHNlLCJpYXQiOjE2OTA1Njg4NjEsImV4cCI6MTY5MDY1NTI2MX0.WLhkHjDHvEBnp14jps5SDIgto3J4B8K8hC-fWd3cI2M
+
+{
+  "full_name": "raimov jaxon",
+  "address": "ko'kcha",
+  "phone": "+99893340617"
+}
