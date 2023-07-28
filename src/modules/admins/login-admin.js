@@ -9,7 +9,7 @@ const loginAdmin = async ({ body }) => {
   const existed = await Admins.findOne({ username });
 
   if (!existed) {
-    return "User Not Found.";
+    return "Admin Not Found.";
   }
 
   const isCorrect = compareSync(password, existed.password);

@@ -9,15 +9,15 @@ const postAdmin = async ({ body }) => {
     return { error: "This user already existed" };
   }
 
-  const user = {
+  const admin = {
     ...data,
     username,
     password: hashSync(password, 10),
   };
 
-  const newUser = await Admins.create({ ...user });
+  const newAdmin = await Admins.create({ ...admin });
 
-  return { data: newUser };
+  return { data: newAdmin };
 };
 
 module.exports = postAdmin;

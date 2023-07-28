@@ -4,7 +4,7 @@ POST http://localhost:5000/login
 Content-Type: application/json
 
 {
-  "username": "dostonbek",
+  "username": "sherozbek.17",
   "password": "1234"
 }
 
@@ -42,3 +42,16 @@ GET http://localhost:5000/admins/64c24515289d39a80dd69734
 Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5YTgwZGQ2OTczNCIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MDU1OTg2MCwiZXhwIjoxNjkwNjQ2MjYwfQ.yL4whOaI2947tSwkQY0tqtlomjovBrpnDosZ3CvqhiE
 
+
+
+###patch admins
+
+PATCH  http://localhost:5000/admins/me
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5YTgwZGQ2OTczNCIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MDU1OTg2MCwiZXhwIjoxNjkwNjQ2MjYwfQ.yL4whOaI2947tSwkQY0tqtlomjovBrpnDosZ3CvqhiE
+
+{
+  "username": "sherozbek.17",
+  "password": "1234",
+  "full_name": "Koko Joej"
+}
