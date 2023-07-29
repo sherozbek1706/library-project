@@ -2,6 +2,7 @@ const postBook = require("./post-book");
 const getBook = require("./get-book");
 const showBook = require("./show-book");
 const editBook = require("./edit-book");
+const deleteBook = require("./delete-book");
 
 const post_book = async (req, res) => {
   try {
@@ -43,9 +44,20 @@ const edit_book = async (req, res) => {
   }
 };
 
+const delete_book = async (req, res) => {
+  try {
+    const result = await deleteBook({ params: req.params.id });
+
+    res.json(result);
+  } catch (error) {
+    res.json(error);
+  }
+};
+
 module.exports = {
   post_book,
   get_book,
   show_book,
   edit_book,
+  delete_book,
 };
