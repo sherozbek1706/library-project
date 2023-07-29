@@ -1,0 +1,29 @@
+###
+POST http://localhost:5000/loan
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MDY0MTAyOSwiZXhwIjoxNjkwNzI3NDI5fQ.Tw1IiSqwuMmyiQ2FYFK3iuu3bC-MiqqrxHR8GBHvVvU
+
+
+{
+  "book":"64c521ef8241d6d400dfb03a",
+  "borrower": "64c51fe58241d6d400dfb011",
+  "day": 7
+}
+
+
+
+
+
+
+
+###
+GET http://localhost:5000/loans
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MDY0MTAyOSwiZXhwIjoxNjkwNzI3NDI5fQ.Tw1IiSqwuMmyiQ2FYFK3iuu3bC-MiqqrxHR8GBHvVvU
+
+
+
+###
+GET http://localhost:5000/loans/64c52edc94a743e01e918e50
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MDY0MTAyOSwiZXhwIjoxNjkwNzI3NDI5fQ.Tw1IiSqwuMmyiQ2FYFK3iuu3bC-MiqqrxHR8GBHvVvU

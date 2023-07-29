@@ -4,10 +4,10 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5
 Content-Type: application/json
 
 {
-  "title": "qasoskor",
-  "publisher": "64c4247ba9322227570603cf",
-  "author": "64c4c5d0dbad71d931cca629" ,
-  "copies": 4
+  "title": "Xitoy devori",
+  "publisher": "64c5205f8241d6d400dfb010",
+  "author": "64c521278241d6d400dfb029" ,
+  "copies": 10
 }
 
 
@@ -45,6 +45,6 @@ Content-Type: application/json
 
 
 ###
-DELETE http://localhost:5000/books/64c4d496ce28a91793a34820
+DELETE http://localhost:5000/books/64c522158241d6d400dfb03e
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5YTgwZGQ2OTczNCIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MDYxODI5MiwiZXhwIjoxNjkwNzA0NjkyfQ.YWKyjVR3LBsIIHvTJNeozKkX5eoZJa1Eu2VfXnsc384
 Content-Type: application/json

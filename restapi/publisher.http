@@ -1,12 +1,12 @@
 ###
 POST http://localhost:5000/publisher
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzQwMzg1YjgzOTFmOTRmZDM3ODQ4OCIsImlzU3VwZXIiOmZhbHNlLCJpYXQiOjE2OTA1Njg4NjEsImV4cCI6MTY5MDY1NTI2MX0.WLhkHjDHvEBnp14jps5SDIgto3J4B8K8hC-fWd3cI2M
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MDY0MDI4NywiZXhwIjoxNjkwNzI2Njg3fQ.RMXrmYJWckmfq4dwrHLiVSBkV0S2_mwxtEbKr7agdBk
 
 {
-  "full_name": "raimov jaxon",
-  "address": "PUBLISHER",
-  "phone": "+99893340617"
+  "full_name": "Inson - nashriyot",
+  "address": "Toshkent",
+  "phone": "+998771118811"
 }
 
 
@@ -15,8 +15,7 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzQwMzg1YjgzOTFm
 ###
 GET http://localhost:5000/publisher
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzQwMzg1YjgzOTFmOTRmZDM3ODQ4OCIsImlzU3VwZXIiOmZhbHNlLCJpYXQiOjE2OTA1Njg4NjEsImV4cCI6MTY5MDY1NTI2MX0.WLhkHjDHvEBnp14jps5SDIgto3J4B8K8hC-fWd3cI2M
-
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MDY0MDI4NywiZXhwIjoxNjkwNzI2Njg3fQ.RMXrmYJWckmfq4dwrHLiVSBkV0S2_mwxtEbKr7agdBk
 
 
 

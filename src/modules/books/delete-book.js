@@ -11,9 +11,13 @@ const deleteBook = async ({ params }) => {
     return { error: "Book Not Found" };
   }
 
-  await Book.findByIdAndDelete({ _id: params });
+  const deleted = await Book.findByIdAndUpdate(
+    { _id: params },
+    { is_deleted: true },
+    { new: true }
+  );
 
-  return { data: existed };
+  return { data: deleted };
 };
 
 module.exports = deleteBook;

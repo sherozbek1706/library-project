@@ -8,7 +8,7 @@ const postBook = async ({ body }) => {
   }
 
   const PublisherExisted = await Publisher.findOne({ _id: publisher });
-  console.log(PublisherExisted);
+  
   if (!PublisherExisted) {
     return { error: "Publisher Not Found" };
   }
