@@ -1,0 +1,11 @@
+###
+POST http://localhost:5000/books
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5YTgwZGQ2OTczNCIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MDYxODI5MiwiZXhwIjoxNjkwNzA0NjkyfQ.YWKyjVR3LBsIIHvTJNeozKkX5eoZJa1Eu2VfXnsc384
+Content-Type: application/json
+
+{
+  "title": "qasoskor",
+  "publisher": "64c4247ba9322227570603cf",
+  "author": "64c4c5d0dbad71d931cca629" ,
+  "copies": 4
+}
