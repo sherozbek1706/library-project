@@ -27,3 +27,17 @@ Content-Type: application/json
 GET http://localhost:5000/books/64c4d5c13c9ae7fe99d5f675
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5YTgwZGQ2OTczNCIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MDYxODI5MiwiZXhwIjoxNjkwNzA0NjkyfQ.YWKyjVR3LBsIIHvTJNeozKkX5eoZJa1Eu2VfXnsc384
 Content-Type: application/json
+
+
+
+###
+PATCH http://localhost:5000/books/64c4d217977c25bc6417355d
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5YTgwZGQ2OTczNCIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MDYxODI5MiwiZXhwIjoxNjkwNzA0NjkyfQ.YWKyjVR3LBsIIHvTJNeozKkX5eoZJa1Eu2VfXnsc384
+Content-Type: application/json
+
+{
+  "title": "Coca-cola && Pepsi",
+  "publisher": "64c4247ba9322227570603cf",
+  "author": "64c4c5d0dbad71d931cca629" ,
+  "copies": 2
+}
