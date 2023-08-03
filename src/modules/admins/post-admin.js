@@ -1,12 +1,13 @@
 const { hashSync } = require("bcryptjs");
 const Admins = require("./Admins");
+const { BadRequestError } = require("../../shared/errors");
 
 const postAdmin = async ({ body }) => {
   const { username, password, ...data } = body;
   const existed = await Admins.findOne({ username });
 
   if (existed) {
-    return { error: "This user already existed" };
+    throw new BadRequestError("This user already existed");
   }
 
   const admin = {
