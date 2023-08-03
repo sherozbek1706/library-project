@@ -16,6 +16,13 @@ Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA2OTA2NiwiZXhwIjoxNjkxMTU1NDY2fQ.8ZDJZ92QBrh1QuKxB3B7Ob7V2l9BM_p2haHlgPd7dpI
 
 
+
+### GET LOANS  ?sort[by]=palon&sort[order]=desc
+GET http://localhost:5000/loans?sort[by]=out_date&sort[order]=asc
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA2OTA2NiwiZXhwIjoxNjkxMTU1NDY2fQ.8ZDJZ92QBrh1QuKxB3B7Ob7V2l9BM_p2haHlgPd7dpI
+
+
 ### GET ONE LOANS
 GET http://localhost:5000/loans/64cbaadd1397e33767ba6c06
 Content-Type: application/json

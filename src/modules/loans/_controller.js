@@ -19,7 +19,7 @@ const post_loans = async (req, res, next) => {
 
 const get_loans = async (req, res, next) => {
   try {
-    const result = await getLoans();
+    const result = await getLoans({ query: req.query });
 
     res.json(result);
   } catch (error) {
