@@ -11,6 +11,9 @@ const publisherRoute = require("./modules/publisher/_api");
 const authorsRoute = require("./modules/authors/_api");
 const booksRoute = require("./modules/books/_api");
 const loansRoute = require("./modules/loans/_api");
+
+const handleError = require("./shared/errors/handle");
+
 app.use(express.json());
 
 app.use(adminsRoute);
@@ -19,6 +22,7 @@ app.use(publisherRoute);
 app.use(authorsRoute);
 app.use(booksRoute);
 app.use(loansRoute);
+app.use(handleError);
 
 app.listen(config.port, () =>
   console.log(`SERVER HAS BEEN STARTED ON PORT ${config.port}`)

@@ -71,14 +71,16 @@ const edit_admins = async (req, res) => {
  *
  * @param {express.Request} req
  * @param {express.Response} res
+ * @param {express.NextFunction} next
  */
-const delete_admins = async (req, res) => {
+
+const delete_admins = async (req, res, next) => {
   try {
     const result = await deleteAdmins({ params: req.params.id });
 
     res.json(result);
   } catch (error) {
-    res.json(error);
+    next(error);
   }
 };
 

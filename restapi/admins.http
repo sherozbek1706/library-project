@@ -16,7 +16,7 @@ Content-Type: application/json
 
 POST http://localhost:5000/admins
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5YTgwZGQ2OTczNCIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MDU1OTg2MCwiZXhwIjoxNjkwNjQ2MjYwfQ.yL4whOaI2947tSwkQY0tqtlomjovBrpnDosZ3CvqhiE
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA1Mjk0MSwiZXhwIjoxNjkxMTM5MzQxfQ.frWpt4_tJk6b7jdTGoM-qy6Vad-e6wAXTpnDSLVlIeQ
 
 {
   "full_name": "Jurayev Doston",  
@@ -31,7 +31,8 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5
 
 GET http://localhost:5000/admins
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5YTgwZGQ2OTczNCIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MDU1OTg2MCwiZXhwIjoxNjkwNjQ2MjYwfQ.yL4whOaI2947tSwkQY0tqtlomjovBrpnDosZ3CvqhiE
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA1MDM5MSwiZXhwIjoxNjkxMTM2NzkxfQ.86z3qCy_pTNRFV9UkEBWUDTsZyS9pqPSkzU6OmCRrr8
+
 
 
 
@@ -39,8 +40,7 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5
 
 GET http://localhost:5000/admins/64c24515289d39a80dd69734
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5YTgwZGQ2OTczNCIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MDU1OTg2MCwiZXhwIjoxNjkwNjQ2MjYwfQ.yL4whOaI2947tSwkQY0tqtlomjovBrpnDosZ3CvqhiE
-
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA1MDM0NCwiZXhwIjoxNjkxMTM2NzQ0fQ.95a8c-_XTsbyd8s_e89xS-tFT37azgEs9Ry2LvZlmws
 
 
 ###patch admins
@@ -57,12 +57,11 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5
 
 
 
-###patch admins
+### admins
 
-DELETE  http://localhost:5000/admins/64c40385b8391f94fd378488
+DELETE  http://localhost:5000/admins/64c51eef81aaba744d57457f
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5YTgwZGQ2OTczNCIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MDU1OTg2MCwiZXhwIjoxNjkwNjQ2MjYwfQ.yL4whOaI2947tSwkQY0tqtlomjovBrpnDosZ3CvqhiE
-
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA1MDM5MSwiZXhwIjoxNjkxMTM2NzkxfQ.86z3qCy_pTNRFV9UkEBWUDTsZyS9pqPSkzU6OmCRrr8
 
 
 

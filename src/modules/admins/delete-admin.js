@@ -1,21 +1,19 @@
 const Admins = require("./Admins");
-
+const { NotFoundError } = require("../../shared/errors");
 const deleteAdmins = async ({ params }) => {
   if (params.length !== 24) {
-    return { error: "Admin Not Found" };
+    throw new NotFoundError("Admin Not Found");
   }
 
   const exist = await Admins.find({ _id: params });
 
   if (!exist) {
-    return { error: "Admin Not Found" };
+    throw new NotFoundError("Admin Not Found");
   }
 
-  const deletedAdmin = await Admins.findByIdAndUpdate(
-    params,
-    { is_deleted: true },
-    { new: true }
-  );
+  const deletedAdmin = await Admins.findByIdAndUpdate(params, {
+    is_deleted: true,
+  });
 
   return { data: deletedAdmin };
 };
