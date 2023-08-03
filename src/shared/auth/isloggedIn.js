@@ -1,7 +1,7 @@
 const express = require("express");
 const config = require("../config");
 const jwt = require("jsonwebtoken");
-
+const { UnauthorizedError } = require("../errors");
 /**
  *
  * @param {express.Request} req
@@ -14,16 +14,18 @@ const isLoggedIn = async (req, res, next) => {
     const token = req.headers.authorization;
 
     if (!token) {
-      return "Unauthorized.";
+      throw new UnauthorizedError("Unauthorized.");
     }
 
-    const decoded = jwt.verify(token, config.jwt.secret);
+    const decoded = jwt.verify(token, config.jwt.secret, {
+      ignoreExpiration: false,
+    });
 
     req.user = decoded;
 
     next();
   } catch (error) {
-    next(error.message);
+    next(new UnauthorizedError(error.message));
   }
 };
 

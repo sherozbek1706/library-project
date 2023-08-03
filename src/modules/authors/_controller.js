@@ -5,37 +5,37 @@ const showAuthor = require("./show-author");
 const editAuthor = require("./edit-author");
 const deleteAuthors = require("./delete-author");
 
-const post_author = async (req, res) => {
+const post_author = async (req, res, next) => {
   try {
     const result = await postAuthor({ body: req.body });
 
     res.json(result);
   } catch (error) {
-    console.log(error);
+    next(error);
   }
 };
 
-const get_author = async (req, res) => {
+const get_author = async (req, res, next) => {
   try {
     const result = await getAuthor();
 
     res.json(result);
   } catch (error) {
-    console.log(error);
+    next(error);
   }
 };
 
-const show_author = async (req, res) => {
+const show_author = async (req, res, next) => {
   try {
     const result = await showAuthor({ params: req.params.id });
 
     res.json(result);
   } catch (error) {
-    res.json(error);
+    next(error);
   }
 };
 
-const edit_author = async (req, res) => {
+const edit_author = async (req, res, next) => {
   try {
     const result = await editAuthor({
       body: req.body,
@@ -44,11 +44,11 @@ const edit_author = async (req, res) => {
 
     res.json(result);
   } catch (error) {
-    res.json(error);
+    next(error);
   }
 };
 
-const delete_author = async (req, res) => {
+const delete_author = async (req, res, next) => {
   try {
     const result = await deleteAuthors({
       params: req.params.id,
@@ -56,7 +56,7 @@ const delete_author = async (req, res) => {
 
     res.json(result);
   } catch (error) {
-    res.json(error);
+    next(error);
   }
 };
 
