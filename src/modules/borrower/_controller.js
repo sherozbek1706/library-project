@@ -4,9 +4,16 @@ const getBorrower = require("./get-borrower");
 const showBorrower = require("./show-borrower");
 const editBorrower = require("./edit-borrower");
 const deleteBorrowers = require("./delete-borrower");
-
+const httpValidator = require("../../shared/http-validator");
+const {
+  deleteOneBorrowersSchema,
+  editBorrowersSchema,
+  postBorrowersSchema,
+  showOneBorrowersSchema,
+} = require("./_schemas");
 const post_borrowers = async (req, res, next) => {
   try {
+    httpValidator({ body: req.body }, postBorrowersSchema);
     const result = await postBorrowers({ body: req.body });
 
     res.json(result);
@@ -27,6 +34,7 @@ const get_borrowers = async (req, res, next) => {
 
 const show_borrowers = async (req, res, next) => {
   try {
+    httpValidator({ params: req.params }, showOneBorrowersSchema);
     const result = await showBorrower({ params: req.params.id });
 
     res.json(result);
@@ -37,6 +45,7 @@ const show_borrowers = async (req, res, next) => {
 
 const edit_borrowers = async (req, res, next) => {
   try {
+    httpValidator({ body: req.body, params: req.params }, editBorrowersSchema);
     const result = await editBorrower({
       body: req.body,
       params: req.params.id,
@@ -50,6 +59,7 @@ const edit_borrowers = async (req, res, next) => {
 
 const delete_borrowers = async (req, res, next) => {
   try {
+    httpValidator({ params: req.params }, deleteOneBorrowersSchema);
     const result = await deleteBorrowers({
       params: req.params.id,
     });

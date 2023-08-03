@@ -8,7 +8,7 @@ const showBorrower = async ({ params }) => {
 
   const exist = await Borrowers.find({ _id: params });
 
-  if (!exist) {
+  if (!exist.length) {
     throw new NotFoundError("Borrowers Not Found");
   }
 

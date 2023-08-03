@@ -1,7 +1,7 @@
-###
+### CREATE BORROWERS
 POST http://localhost:5000/borrowers
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MDY0MDI4NywiZXhwIjoxNjkwNzI2Njg3fQ.RMXrmYJWckmfq4dwrHLiVSBkV0S2_mwxtEbKr7agdBk
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA2NjE4NSwiZXhwIjoxNjkxMTUyNTg1fQ.AgCQr3f5z2LMkYzTLAghiKhS8KeR8iikV_-Xc3smdQc
 
 {
   "full_name": "Xurshidbek Komilov",
@@ -10,39 +10,31 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJh
 }
 
 
-
-
-###
+### GET BORROWERS
 GET http://localhost:5000/borrowers
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzQwMzg1YjgzOTFmOTRmZDM3ODQ4OCIsImlzU3VwZXIiOmZhbHNlLCJpYXQiOjE2OTA1Njg4NjEsImV4cCI6MTY5MDY1NTI2MX0.WLhkHjDHvEBnp14jps5SDIgto3J4B8K8hC-fWd3cI2M
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA2NjE4NSwiZXhwIjoxNjkxMTUyNTg1fQ.AgCQr3f5z2LMkYzTLAghiKhS8KeR8iikV_-Xc3smdQc
 
 
-
-
-###
+### GET ONEBORROWERS
 GET http://localhost:5000/borrowers/64c41084a98be9bd61ecc285
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzQwMzg1YjgzOTFmOTRmZDM3ODQ4OCIsImlzU3VwZXIiOmZhbHNlLCJpYXQiOjE2OTA1Njg4NjEsImV4cCI6MTY5MDY1NTI2MX0.WLhkHjDHvEBnp14jps5SDIgto3J4B8K8hC-fWd3cI2M
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA2NjE4NSwiZXhwIjoxNjkxMTUyNTg1fQ.AgCQr3f5z2LMkYzTLAghiKhS8KeR8iikV_-Xc3smdQc
 
 
-
-###
-PATCH http://localhost:5000/borrowers/64c41084a98be9bd61ecc285
+### EDIT BORROWERS
+PATCH http://localhost:5000/borrowers/64c51fe58241d6d400dfb012
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzQwMzg1YjgzOTFmOTRmZDM3ODQ4OCIsImlzU3VwZXIiOmZhbHNlLCJpYXQiOjE2OTA1Njg4NjEsImV4cCI6MTY5MDY1NTI2MX0.WLhkHjDHvEBnp14jps5SDIgto3J4B8K8hC-fWd3cI2M
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA2NjE4NSwiZXhwIjoxNjkxMTUyNTg1fQ.AgCQr3f5z2LMkYzTLAghiKhS8KeR8iikV_-Xc3smdQc
 
 {
-  "full_name": "raimov jaxongir"
+  "full_name": "raimov jaxongir",
+  "address": "Sufi Guzar",
+  "phone": "+998968564525"
 }
 
 
-
-
-###
+### DELETE BORROWERS
 DELETE http://localhost:5000/borrowers/64c41084a98be9bd61ecc285
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzQwMzg1YjgzOTFmOTRmZDM3ODQ4OCIsImlzU3VwZXIiOmZhbHNlLCJpYXQiOjE2OTA1Njg4NjEsImV4cCI6MTY5MDY1NTI2MX0.WLhkHjDHvEBnp14jps5SDIgto3J4B8K8hC-fWd3cI2M
-
-
-
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA2NjE4NSwiZXhwIjoxNjkxMTUyNTg1fQ.AgCQr3f5z2LMkYzTLAghiKhS8KeR8iikV_-Xc3smdQc

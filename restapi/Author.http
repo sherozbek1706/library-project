@@ -1,43 +1,36 @@
-###
+### CREATE AUTHOR
 POST http://localhost:5000/author
 Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA1NDc4NywiZXhwIjoxNjkxMTQxMTg3fQ.REy_ePmCI0QZpS-1YQwc3oJYfKd5cRM2BQutxJqUWeI
 
 {
-  "name": "Farxod Saidov"
+  "name": "Jasurbek nima gap"
 }
 
 
-
-
-###
+### GET AUTHOR
 GET http://localhost:5000/author
 Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA1NDc4NywiZXhwIjoxNjkxMTQxMTg3fQ.REy_ePmCI0QZpS-1YQwc3oJYfKd5cRM2BQutxJqUWeI
 
 
-###
-GET http://localhost:5000/author/64c21328241d6d400dfb02b
+### GET ONE AUTHOR
+GET http://localhost:5000/author/64c521418241d6d400dfb02d
 Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA1NDc4NywiZXhwIjoxNjkxMTQxMTg3fQ.REy_ePmCI0QZpS-1YQwc3oJYfKd5cRM2BQutxJqUWeI
 
 
-###
-PATCH http://localhost:5000/author/6c521328241d6d400dfb02b
+### EDIT AUTHOR
+PATCH http://localhost:5000/author/64c521418241d6d400dfb02d
 Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA1NDc4NywiZXhwIjoxNjkxMTQxMTg3fQ.REy_ePmCI0QZpS-1YQwc3oJYfKd5cRM2BQutxJqUWeI
 
 {
-  "name": "raimov jaxon"
+  "name": "Jahongir Otajonov"
 }
 
 
-
-
-###
-DELETE http://localhost:5000/author/64c521278241d6d400dfb029
+### DELETE AUTHOR
+DELETE http://localhost:5000/author/64c521418241d6d400dfb02d
 Content-Type: application/json
-# Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA1NDc4NywiZXhwIjoxNjkxMTQxMTg3fQ.REy_ePmCI0QZpS-1YQwc3oJYfKd5cRM2BQutxJqUWeI
-
-
-
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA1NDc4NywiZXhwIjoxNjkxMTQxMTg3fQ.REy_ePmCI0QZpS-1YQwc3oJYfKd5cRM2BQutxJqUWeI
