@@ -5,9 +5,18 @@ const getAdmins = require("./get-admins");
 const showAdmins = require("./show-admin");
 const editAdmin = require("./edit-admin");
 const deleteAdmins = require("./delete-admin");
+const httpValidator = require("../../shared/http-validator");
+const {
+  postLoginAdmins,
+  postAdminsSchema,
+  showOneAdminSchema,
+  editAdminSchema,
+  deleteOneAdminSchema,
+} = require("./_schemas");
 
 const login_admins = async (req, res, next) => {
   try {
+    httpValidator({ body: req.body }, postLoginAdmins);
     const result = await loginAdmin({ body: req.body });
     res.json(result);
   } catch (error) {
@@ -17,6 +26,7 @@ const login_admins = async (req, res, next) => {
 
 const post_admins = async (req, res, next) => {
   try {
+    httpValidator({ body: req.body }, postAdminsSchema);
     const result = await postAdmin({ body: req.body });
 
     res.json(result);
@@ -37,6 +47,7 @@ const get_admins = async (req, res, next) => {
 
 const show_admins = async (req, res, next) => {
   try {
+    httpValidator({ params: req.params }, showOneAdminSchema);
     const result = await showAdmins({ params: req.params.id });
 
     res.json(result);
@@ -53,6 +64,7 @@ const show_admins = async (req, res, next) => {
 
 const edit_admins = async (req, res, next) => {
   try {
+    httpValidator({ params: req.params, body: req.body }, editAdminSchema);
     const result = await editAdmin({
       body: req.body,
       params: req.params.id,
@@ -76,6 +88,7 @@ const edit_admins = async (req, res, next) => {
 
 const delete_admins = async (req, res, next) => {
   try {
+    httpValidator({ params: req.params }, deleteOneAdminSchema);
     const result = await deleteAdmins({ params: req.params.id });
 
     res.json(result);

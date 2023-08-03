@@ -1,4 +1,4 @@
-###login admin
+### LOGIN ADMIN
 
 POST http://localhost:5000/login
 Content-Type: application/json
@@ -10,9 +10,7 @@ Content-Type: application/json
 
 
 
-
-
-###create admin
+### CREATE ADMIN
 
 POST http://localhost:5000/admins
 Content-Type: application/json
@@ -27,7 +25,7 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJh
 
 
 
-###get admins
+### GET ADMIN
 
 GET http://localhost:5000/admins
 Content-Type: application/json
@@ -36,14 +34,14 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJh
 
 
 
-###show admins
+### GET ONE ADMIN
 
-GET http://localhost:5000/admins/64c51eef81aaba74d57457f
+GET http://localhost:5000/admins/64c51eef81aaba744d57457f
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA1MDM0NCwiZXhwIjoxNjkxMTM2NzQ0fQ.95a8c-_XTsbyd8s_e89xS-tFT37azgEs9Ry2LvZlmws
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA1Mjk0MSwiZXhwIjoxNjkxMTM5MzQxfQ.frWpt4_tJk6b7jdTGoM-qy6Vad-e6wAXTpnDSLVlIeQ
 
 
-###patch admins
+### PATCH ADMIN
 
 PATCH  http://localhost:5000/admins/me
 Content-Type: application/json
@@ -57,17 +55,8 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5
 
 
 
-### admins
+### DELETE ADMIN
 
 DELETE  http://localhost:5000/admins/64c51eef81aaba744d57457f
 Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA1MDM5MSwiZXhwIjoxNjkxMTM2NzkxfQ.86z3qCy_pTNRFV9UkEBWUDTsZyS9pqPSkzU6OmCRrr8
-
-
-
-
-
-
-###
-# Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI1MTJkN2FhNWYxY2QyYWI2N2FjYiIsImlzU3VwZXIiOmZhbHNlLCJpYXQiOjE2OTA1NjAyNDgsImV4cCI6MTY5MDY0NjY0OH0.WRXhNLml2FQmMs-Zh3lyY2cx9JZY3AUyRFaxp2nFiQE
-# Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5YTgwZGQ2OTczNCIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MDU1OTg2MCwiZXhwIjoxNjkwNjQ2MjYwfQ.yL4whOaI2947tSwkQY0tqtlomjovBrpnDosZ3CvqhiE
