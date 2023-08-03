@@ -8,7 +8,10 @@ const reqType = {
 const publisherSchema = new mongoose.Schema({
   full_name: reqType,
   address: reqType,
-  phone: reqType,
+  phone: {
+    ...reqType,
+    unique: true,
+  },
   is_deleted: {
     type: mongoose.SchemaTypes.Boolean,
     default: false,

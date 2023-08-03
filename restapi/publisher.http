@@ -10,20 +10,16 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJh
 }
 
 
-
-
 ###
 GET http://localhost:5000/publisher
 Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA2MDYyOSwiZXhwIjoxNjkxMTQ3MDI5fQ.5-p2TB6r2vQITcVfCIYaCdvaGcOdaT9PJ_NlId3WJuE
 
 
-
 ###
-GET http://localhost:5000/publisher/64c4247ba9322227570603cf
+GET http://localhost:5000/publisher/64c520408241d6d400dfb015
 Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA2MDYyOSwiZXhwIjoxNjkxMTQ3MDI5fQ.5-p2TB6r2vQITcVfCIYaCdvaGcOdaT9PJ_NlId3WJuE
-
 
 
 ###
@@ -32,10 +28,10 @@ Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA2MDYyOSwiZXhwIjoxNjkxMTQ3MDI5fQ.5-p2TB6r2vQITcVfCIYaCdvaGcOdaT9PJ_NlId3WJuE
 
 {
-  "full_name": "raimov jaxongir"
+  "full_name": "Inson - nashriyot",
+  "address": "Toshkent",
+  "phone": "+998771118811"
 }
-
-
 
 
 ###
