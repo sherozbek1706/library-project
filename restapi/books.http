@@ -1,7 +1,7 @@
 ###
 POST http://localhost:5000/books
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5YTgwZGQ2OTczNCIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MDYxODI5MiwiZXhwIjoxNjkwNzA0NjkyfQ.YWKyjVR3LBsIIHvTJNeozKkX5eoZJa1Eu2VfXnsc384
 Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA1NjI0NiwiZXhwIjoxNjkxMTQyNjQ2fQ.Tr8sH6SpiVgkgoilD5zD-wh-vtbDFKKmUr-Zz08lQus
 
 {
   "title": "Xitoy devori",
@@ -17,9 +17,8 @@ Content-Type: application/json
 
 ###
 GET http://localhost:5000/books
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5YTgwZGQ2OTczNCIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MDYxODI5MiwiZXhwIjoxNjkwNzA0NjkyfQ.YWKyjVR3LBsIIHvTJNeozKkX5eoZJa1Eu2VfXnsc384
 Content-Type: application/json
-
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA1NjI0NiwiZXhwIjoxNjkxMTQyNjQ2fQ.Tr8sH6SpiVgkgoilD5zD-wh-vtbDFKKmUr-Zz08lQus
 
 
 

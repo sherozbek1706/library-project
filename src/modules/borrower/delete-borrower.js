@@ -1,14 +1,14 @@
 const Borrower = require("./Borrowers");
-
+const { NotFoundError } = require("../../shared/errors");
 const deleteBorrowers = async ({ params }) => {
   if (params.length !== 24) {
-    return { error: "Borrowers Not Found" };
+    throw new NotFoundError("Borrowers Not Found");
   }
 
   const exist = await Borrower.find({ _id: params });
 
   if (!exist) {
-    return { error: "Borrowers Not Found" };
+    throw new NotFoundError("Borrowers Not Found");
   }
 
   const deletedBorrower = await Borrower.findByIdAndUpdate(
