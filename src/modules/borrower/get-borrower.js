@@ -16,6 +16,9 @@ const getBorrower = async ({ query }) => {
   if (by == "full_name") {
     sorted = order == "asc" ? { full_name: 1 } : { full_name: -1 };
   }
+  if (by == "phone") {
+    sorted = order == "asc" ? { phone: 1 } : { phone: -1 };
+  }
 
   const borrower = await Borrowers.find(filter).sort(sorted);
 

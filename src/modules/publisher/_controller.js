@@ -24,7 +24,7 @@ const post_publisher = async (req, res, next) => {
 
 const get_publisher = async (req, res, next) => {
   try {
-    const result = await getPublisher();
+    const result = await getPublisher({ query: req.query });
 
     res.json(result);
   } catch (error) {

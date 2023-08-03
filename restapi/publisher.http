@@ -15,6 +15,16 @@ GET http://localhost:5000/publisher
 Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA2MDYyOSwiZXhwIjoxNjkxMTQ3MDI5fQ.5-p2TB6r2vQITcVfCIYaCdvaGcOdaT9PJ_NlId3WJuE
 
+### GET PUBLISHER ?q=Palon
+GET http://localhost:5000/publisher?q=f
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA2MDYyOSwiZXhwIjoxNjkxMTQ3MDI5fQ.5-p2TB6r2vQITcVfCIYaCdvaGcOdaT9PJ_NlId3WJuE
+
+### GET PUBLISHER ?sort[by]=palon&sort[order]=desc
+GET http://localhost:5000/publisher?sort[by]=full_name&sort[order]=desc
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA2MDYyOSwiZXhwIjoxNjkxMTQ3MDI5fQ.5-p2TB6r2vQITcVfCIYaCdvaGcOdaT9PJ_NlId3WJuE
+
 
 ### GET ONE PUBLISHER
 GET http://localhost:5000/publisher/64c520408241d6d400dfb015
