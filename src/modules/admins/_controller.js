@@ -37,7 +37,7 @@ const post_admins = async (req, res, next) => {
 
 const get_admins = async (req, res, next) => {
   try {
-    const result = await getAdmins();
+    const result = await getAdmins({ query: req.query });
 
     res.json(result);
   } catch (error) {

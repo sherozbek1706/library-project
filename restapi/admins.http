@@ -32,6 +32,20 @@ Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA1MDM5MSwiZXhwIjoxNjkxMTM2NzkxfQ.86z3qCy_pTNRFV9UkEBWUDTsZyS9pqPSkzU6OmCRrr8
 
 
+### GET ADMINS WITH QUERY === url?q=full_name
+
+GET http://localhost:5000/admins?q=she
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA1MDM5MSwiZXhwIjoxNjkxMTM2NzkxfQ.86z3qCy_pTNRFV9UkEBWUDTsZyS9pqPSkzU6OmCRrr8
+
+
+### GET ADMINS WITH QUERY === url?sort[by]=palon&sort[order]=desc
+
+GET http://localhost:5000/admins?sort[by]=username&sort[order]=asc
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA1MDM5MSwiZXhwIjoxNjkxMTM2NzkxfQ.86z3qCy_pTNRFV9UkEBWUDTsZyS9pqPSkzU6OmCRrr8
+
+
 
 
 ### GET ONE ADMIN
