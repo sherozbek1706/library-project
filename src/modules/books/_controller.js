@@ -24,7 +24,7 @@ const post_book = async (req, res, next) => {
 
 const get_book = async (req, res, next) => {
   try {
-    const result = await getBook();
+    const result = await getBook({ query: req.query });
 
     res.json(result);
   } catch (error) {

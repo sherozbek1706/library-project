@@ -5,14 +5,25 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJh
 
 {
   "title": "Xitoy devori",
-  "publisher": "64c5205f8241d6d400dfb010",
+  "publisher": "64c520198241d6d400dfb013",
   "author": "64c521278241d6d400dfb029" ,
-  "copies": 10
+  "copies": 3
 }
 
 
 ### GET  BOOKS
 GET http://localhost:5000/books
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA1NjI0NiwiZXhwIjoxNjkxMTQyNjQ2fQ.Tr8sH6SpiVgkgoilD5zD-wh-vtbDFKKmUr-Zz08lQus
+
+
+### GET  BOOKS ?q=Palon
+GET http://localhost:5000/books?q=a
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA1NjI0NiwiZXhwIjoxNjkxMTQyNjQ2fQ.Tr8sH6SpiVgkgoilD5zD-wh-vtbDFKKmUr-Zz08lQus
+
+### GET  BOOKS ?sort[by]=copies&sort[order]=desc
+GET http://localhost:5000/books?sort[by]=copies&sort[order]=desc
 Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA1NjI0NiwiZXhwIjoxNjkxMTQyNjQ2fQ.Tr8sH6SpiVgkgoilD5zD-wh-vtbDFKKmUr-Zz08lQus
 

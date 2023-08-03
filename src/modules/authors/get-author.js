@@ -4,8 +4,7 @@ const getAuthor = async ({query}) => {
   let sorted = {};
   const { q, sort = { by: "", order: "asc" } } = query;
 
-  // SEARCH WITH FULL NAME
-  console.log(query);
+  // SEARCH WITH NAME
   if (q) {
     filter.name = { $regex: new RegExp(q, "i") };
   }
