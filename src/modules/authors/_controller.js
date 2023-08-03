@@ -25,7 +25,7 @@ const post_author = async (req, res, next) => {
 
 const get_author = async (req, res, next) => {
   try {
-    const result = await getAuthor();
+    const result = await getAuthor({ query: req.query });
 
     res.json(result);
   } catch (error) {

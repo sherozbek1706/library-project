@@ -11,7 +11,7 @@ const getAdmins = async ({ query }) => {
     filter.full_name = { $regex: new RegExp(q, "i") };
   }
 
-  // SORT WITH NAME
+  // SORT
 
   const { by, order } = sort;
 

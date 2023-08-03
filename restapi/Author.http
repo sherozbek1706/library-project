@@ -14,6 +14,19 @@ Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA1NDc4NywiZXhwIjoxNjkxMTQxMTg3fQ.REy_ePmCI0QZpS-1YQwc3oJYfKd5cRM2BQutxJqUWeI
 
 
+### GET AUTHOR ?q=Palon
+GET http://localhost:5000/author?q=al
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA1NDc4NywiZXhwIjoxNjkxMTQxMTg3fQ.REy_ePmCI0QZpS-1YQwc3oJYfKd5cRM2BQutxJqUWeI
+
+
+
+### GET AUTHOR ?sort[by]=palon&sort[order]=desc
+GET http://localhost:5000/author?sort[by]=name&sort[order]=desc
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA1NDc4NywiZXhwIjoxNjkxMTQxMTg3fQ.REy_ePmCI0QZpS-1YQwc3oJYfKd5cRM2BQutxJqUWeI
+
+
 ### GET ONE AUTHOR
 GET http://localhost:5000/author/64c521418241d6d400dfb02d
 Content-Type: application/json
