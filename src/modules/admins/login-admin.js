@@ -7,7 +7,7 @@ const { NotFoundError, BadRequestError } = require("../../shared/errors");
 const loginAdmin = async ({ body }) => {
   const { username, password } = body;
 
-  const existed = await Admins.findOne({ username });
+  const existed = await Admins.findOne({ username, is_deleted: false });
 
   if (!existed) {
     throw new NotFoundError("Admin Not Found.");

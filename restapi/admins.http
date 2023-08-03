@@ -54,7 +54,6 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5
 }
 
 
-
 ### DELETE ADMIN
 
 DELETE  http://localhost:5000/admins/64c51eef81aaba744d57457f

@@ -1,22 +1,22 @@
 ### CREATE LOANS
 POST http://localhost:5000/loan
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MDY0MTAyOSwiZXhwIjoxNjkwNzI3NDI5fQ.Tw1IiSqwuMmyiQ2FYFK3iuu3bC-MiqqrxHR8GBHvVvU
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA2OTA2NiwiZXhwIjoxNjkxMTU1NDY2fQ.8ZDJZ92QBrh1QuKxB3B7Ob7V2l9BM_p2haHlgPd7dpI
 
 {
   "book":"64c521ef8241d6d400dfb03a",
-  "borrower": "64c51fe58241d6d400dfb011",
-  "day": 7
+  "borrower": "64c51fc68241d6d400dfb00e",
+  "day": 15
 }
 
 
 ### GET LOANS
 GET http://localhost:5000/loans
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MDY0MTAyOSwiZXhwIjoxNjkwNzI3NDI5fQ.Tw1IiSqwuMmyiQ2FYFK3iuu3bC-MiqqrxHR8GBHvVvU
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA2OTA2NiwiZXhwIjoxNjkxMTU1NDY2fQ.8ZDJZ92QBrh1QuKxB3B7Ob7V2l9BM_p2haHlgPd7dpI
 
 
 ### GET ONE LOANS
-GET http://localhost:5000/loans/64c52edc94a743e01e918e5
+GET http://localhost:5000/loans/64cbaadd1397e33767ba6c06
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA1NzMzMSwiZXhwIjoxNjkxMTQzNzMxfQ.Ue3kjB5SBUUte2Oaj3i9jU5mwv53vXzu4kMSIj98ghw
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA2OTA2NiwiZXhwIjoxNjkxMTU1NDY2fQ.8ZDJZ92QBrh1QuKxB3B7Ob7V2l9BM_p2haHlgPd7dpI
