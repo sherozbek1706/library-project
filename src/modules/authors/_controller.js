@@ -4,9 +4,17 @@ const getAuthor = require("./get-author");
 const showAuthor = require("./show-author");
 const editAuthor = require("./edit-author");
 const deleteAuthors = require("./delete-author");
+const httpValidator = require("../../shared/http-validator");
+const {
+  deleteOneAuthorSchema,
+  editAuthorSchema,
+  postAuthorSchema,
+  showOneAuthorSchema,
+} = require("./_schemas");
 
 const post_author = async (req, res, next) => {
   try {
+    httpValidator({ body: req.body }, postAuthorSchema);
     const result = await postAuthor({ body: req.body });
 
     res.json(result);
@@ -27,6 +35,7 @@ const get_author = async (req, res, next) => {
 
 const show_author = async (req, res, next) => {
   try {
+    httpValidator({ params: req.params }, showOneAuthorSchema);
     const result = await showAuthor({ params: req.params.id });
 
     res.json(result);
@@ -37,6 +46,7 @@ const show_author = async (req, res, next) => {
 
 const edit_author = async (req, res, next) => {
   try {
+    httpValidator({ params: req.params, body: req.body }, editAuthorSchema);
     const result = await editAuthor({
       body: req.body,
       params: req.params.id,
@@ -50,6 +60,7 @@ const edit_author = async (req, res, next) => {
 
 const delete_author = async (req, res, next) => {
   try {
+    httpValidator({ params: req.params }, deleteOneAuthorSchema);
     const result = await deleteAuthors({
       params: req.params.id,
     });

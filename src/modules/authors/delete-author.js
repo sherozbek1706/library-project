@@ -8,7 +8,7 @@ const deleteAuthors = async ({ params }) => {
 
   const exist = await Author.find({ _id: params });
 
-  if (!exist) {
+  if (!exist.length) {
     throw new NotFoundError("Author Not Found");
   }
 
