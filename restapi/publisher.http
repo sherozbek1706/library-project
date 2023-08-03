@@ -1,4 +1,4 @@
-###
+### CREATE PUBLISHER
 POST http://localhost:5000/publisher
 Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA2MDYyOSwiZXhwIjoxNjkxMTQ3MDI5fQ.5-p2TB6r2vQITcVfCIYaCdvaGcOdaT9PJ_NlId3WJuE
@@ -10,19 +10,19 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJh
 }
 
 
-###
+### GET PUBLISHER
 GET http://localhost:5000/publisher
 Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA2MDYyOSwiZXhwIjoxNjkxMTQ3MDI5fQ.5-p2TB6r2vQITcVfCIYaCdvaGcOdaT9PJ_NlId3WJuE
 
 
-###
+### GET ONE PUBLISHER
 GET http://localhost:5000/publisher/64c520408241d6d400dfb015
 Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA2MDYyOSwiZXhwIjoxNjkxMTQ3MDI5fQ.5-p2TB6r2vQITcVfCIYaCdvaGcOdaT9PJ_NlId3WJuE
 
 
-###
+### EDIT PUBLISHER
 PATCH http://localhost:5000/publisher/64c520198241d6d400dfb013
 Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA2MDYyOSwiZXhwIjoxNjkxMTQ3MDI5fQ.5-p2TB6r2vQITcVfCIYaCdvaGcOdaT9PJ_NlId3WJuE
@@ -34,7 +34,7 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJh
 }
 
 
-###
+### DELETE PUBLISHER
 DELETE http://localhost:5000/publisher/64c4236dd5b26a8e64c32393
 Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA2MDYyOSwiZXhwIjoxNjkxMTQ3MDI5fQ.5-p2TB6r2vQITcVfCIYaCdvaGcOdaT9PJ_NlId3WJuE

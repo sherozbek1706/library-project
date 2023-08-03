@@ -1,4 +1,4 @@
-###
+### CREATE BOOKS
 POST http://localhost:5000/books
 Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA1NjI0NiwiZXhwIjoxNjkxMTQyNjQ2fQ.Tr8sH6SpiVgkgoilD5zD-wh-vtbDFKKmUr-Zz08lQus
@@ -11,28 +11,22 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJh
 }
 
 
-
-
-
-
-###
+### GET  BOOKS
 GET http://localhost:5000/books
 Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA1NjI0NiwiZXhwIjoxNjkxMTQyNjQ2fQ.Tr8sH6SpiVgkgoilD5zD-wh-vtbDFKKmUr-Zz08lQus
 
 
-
-###
+### GET ONE BOOKS
 GET http://localhost:5000/books/64c4d5c13c9ae7fe99d5f675
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5YTgwZGQ2OTczNCIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MDYxODI5MiwiZXhwIjoxNjkwNzA0NjkyfQ.YWKyjVR3LBsIIHvTJNeozKkX5eoZJa1Eu2VfXnsc384
 Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA1NjI0NiwiZXhwIjoxNjkxMTQyNjQ2fQ.Tr8sH6SpiVgkgoilD5zD-wh-vtbDFKKmUr-Zz08lQus
 
 
-
-###
+### EDIT BOOKS
 PATCH http://localhost:5000/books/64c4d217977c25bc6417355d
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5YTgwZGQ2OTczNCIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MDYxODI5MiwiZXhwIjoxNjkwNzA0NjkyfQ.YWKyjVR3LBsIIHvTJNeozKkX5eoZJa1Eu2VfXnsc384
 Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA1NjI0NiwiZXhwIjoxNjkxMTQyNjQ2fQ.Tr8sH6SpiVgkgoilD5zD-wh-vtbDFKKmUr-Zz08lQus
 
 {
   "title": "Coca-cola && Pepsi",
@@ -42,8 +36,7 @@ Content-Type: application/json
 }
 
 
-
-###
+### DELETE BOOKS
 DELETE http://localhost:5000/books/64c522158241d6d400dfb03e
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzI0NTE1Mjg5ZDM5YTgwZGQ2OTczNCIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MDYxODI5MiwiZXhwIjoxNjkwNzA0NjkyfQ.YWKyjVR3LBsIIHvTJNeozKkX5eoZJa1Eu2VfXnsc384
 Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA1NjI0NiwiZXhwIjoxNjkxMTQyNjQ2fQ.Tr8sH6SpiVgkgoilD5zD-wh-vtbDFKKmUr-Zz08lQus
