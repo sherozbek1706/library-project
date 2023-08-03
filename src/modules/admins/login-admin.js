@@ -2,6 +2,7 @@ const { compareSync } = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const Admins = require("./Admins");
 const config = require("../../shared/config");
+const { NotFoundError, BadRequestError } = require("../../shared/errors");
 
 const loginAdmin = async ({ body }) => {
   const { username, password } = body;
@@ -9,13 +10,13 @@ const loginAdmin = async ({ body }) => {
   const existed = await Admins.findOne({ username });
 
   if (!existed) {
-    return "Admin Not Found.";
+    throw new NotFoundError("Admin Not Found.");
   }
 
   const isCorrect = compareSync(password, existed.password);
 
   if (!isCorrect) {
-    return "Password incorrect.";
+    throw new BadRequestError("Password incorrect");
   }
 
   const token = jwt.sign(
