@@ -1,8 +1,7 @@
-###
+### CREATE LOANS
 POST http://localhost:5000/loan
 Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MDY0MTAyOSwiZXhwIjoxNjkwNzI3NDI5fQ.Tw1IiSqwuMmyiQ2FYFK3iuu3bC-MiqqrxHR8GBHvVvU
-
 
 {
   "book":"64c521ef8241d6d400dfb03a",
@@ -11,19 +10,13 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJh
 }
 
 
-
-
-
-
-
-###
+### GET LOANS
 GET http://localhost:5000/loans
 Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MDY0MTAyOSwiZXhwIjoxNjkwNzI3NDI5fQ.Tw1IiSqwuMmyiQ2FYFK3iuu3bC-MiqqrxHR8GBHvVvU
 
 
-
-###
+### GET ONE LOANS
 GET http://localhost:5000/loans/64c52edc94a743e01e918e5
 Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA1NzMzMSwiZXhwIjoxNjkxMTQzNzMxfQ.Ue3kjB5SBUUte2Oaj3i9jU5mwv53vXzu4kMSIj98ghw
