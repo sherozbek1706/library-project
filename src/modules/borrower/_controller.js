@@ -24,7 +24,7 @@ const post_borrowers = async (req, res, next) => {
 
 const get_borrowers = async (req, res, next) => {
   try {
-    const result = await getBorrower();
+    const result = await getBorrower({ query: req.query });
 
     res.json(result);
   } catch (error) {

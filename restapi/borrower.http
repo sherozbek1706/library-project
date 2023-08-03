@@ -15,6 +15,16 @@ GET http://localhost:5000/borrowers
 Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA2NjE4NSwiZXhwIjoxNjkxMTUyNTg1fQ.AgCQr3f5z2LMkYzTLAghiKhS8KeR8iikV_-Xc3smdQc
 
+### GET BORROWERS ?q=palon
+GET http://localhost:5000/borrowers?q=ja
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA2NjE4NSwiZXhwIjoxNjkxMTUyNTg1fQ.AgCQr3f5z2LMkYzTLAghiKhS8KeR8iikV_-Xc3smdQc
+
+### GET BORROWERS ?sort[by]=palon&sort[order]=desc
+GET http://localhost:5000/borrowers?sort[by]=palon&sort[order]=desc
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzUxZWVmODFhYWJhNzQ0ZDU3NDU3ZiIsImlzU3VwZXIiOnRydWUsImlhdCI6MTY5MTA2NjE4NSwiZXhwIjoxNjkxMTUyNTg1fQ.AgCQr3f5z2LMkYzTLAghiKhS8KeR8iikV_-Xc3smdQc
+
 
 ### GET ONEBORROWERS
 GET http://localhost:5000/borrowers/64c41084a98be9bd61ecc285
