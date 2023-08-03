@@ -1,5 +1,6 @@
 const { hashSync } = require("bcryptjs");
 const Admins = require("./Admins");
+const { NotFoundError } = require("../../shared/errors");
 
 const editAdmin = async ({ body, params, user }) => {
   let exist;
@@ -10,14 +11,14 @@ const editAdmin = async ({ body, params, user }) => {
     exist = await Admins.find({ _id: user.id });
   } else {
     if (params.length !== 24) {
-      return { error: "Admin Not Found" };
+      throw new NotFoundError("Admin Not Found");
     }
     id = params;
     exist = await Admins.find({ _id: params });
   }
 
   if (!exist) {
-    return { error: "Admin Not Found" };
+    throw new NotFoundError("Admin Not Found");
   }
 
   const updatingAdmin = { ...body, password: hashSync(body.password, 10) };
