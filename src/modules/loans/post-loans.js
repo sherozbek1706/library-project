@@ -1,7 +1,11 @@
 const Loans = require("./Loans");
 const Book = require("../books/Book");
 const Borrower = require("../borrower/Borrowers");
-
+const {
+  NotFoundError,
+  BadRequestError,
+  ForbiddenError,
+} = require("../../shared/errors");
 const postLoans = async ({ body, user }) => {
   const { book, borrower, day } = body;
   const { id } = user;
@@ -9,25 +13,25 @@ const postLoans = async ({ body, user }) => {
   // Borrower
 
   if (borrower.length !== 24) {
-    return { error: "Borrower Not Found" };
+    throw new NotFoundError("Borrower Not Found");
   }
 
   const BorrowerExisted = await Borrower.findOne({ _id: borrower });
 
   if (!BorrowerExisted) {
-    return { error: "Borrower Not Found" };
+    throw new NotFoundError("Borrower Not Found");
   }
 
   // Book
 
   if (book.length !== 24) {
-    return { error: "Book Not Found" };
+    throw new NotFoundError("Book Not Found");
   }
 
   const BookExisted = await Book.findOne({ _id: book });
 
   if (!BookExisted) {
-    return { error: "Book Not Found" };
+    throw new NotFoundError("Book Not Found");
   }
 
   // loans
@@ -35,7 +39,9 @@ const postLoans = async ({ body, user }) => {
   const loansList = await Loans.find().find({ borrower });
 
   if (loansList.length > 10) {
-    return { error: "This borrower have 10 loan!" };
+    throw new ForbiddenError(
+      "Userning topshirmagan buyurtmalari 10 tadan o'tib ketgan"
+    );
   }
 
   let expiredProduct = [];
@@ -50,10 +56,10 @@ const postLoans = async ({ body, user }) => {
   });
 
   if (expiredProduct.length > 0) {
-    return { error: "Sizda expired bo'lgan loads bor!" };
+    throw new ForbiddenError("Sizda expired bo'lgan loads bor!");
   }
   if (day > 60) {
-    return { error: "Sorry, loan maximal day 60 day" };
+    throw new ForbiddenError("Sorry, loan maximal day 60 day");
   }
 
   let out_date = new Date(new Date() + 10).toJSON().slice(0, 10);

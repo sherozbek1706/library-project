@@ -5,37 +5,37 @@ const showBorrower = require("./show-borrower");
 const editBorrower = require("./edit-borrower");
 const deleteBorrowers = require("./delete-borrower");
 
-const post_borrowers = async (req, res) => {
+const post_borrowers = async (req, res, next) => {
   try {
     const result = await postBorrowers({ body: req.body });
 
     res.json(result);
   } catch (error) {
-    console.log(error);
+    next(error);
   }
 };
 
-const get_borrowers = async (req, res) => {
+const get_borrowers = async (req, res, next) => {
   try {
     const result = await getBorrower();
 
     res.json(result);
   } catch (error) {
-    console.log(error);
+    next(error);
   }
 };
 
-const show_borrowers = async (req, res) => {
+const show_borrowers = async (req, res, next) => {
   try {
     const result = await showBorrower({ params: req.params.id });
 
     res.json(result);
   } catch (error) {
-    res.json(error);
+    next(error);
   }
 };
 
-const edit_borrowers = async (req, res) => {
+const edit_borrowers = async (req, res, next) => {
   try {
     const result = await editBorrower({
       body: req.body,
@@ -44,11 +44,11 @@ const edit_borrowers = async (req, res) => {
 
     res.json(result);
   } catch (error) {
-    res.json(error);
+    next(error);
   }
 };
 
-const delete_borrowers = async (req, res) => {
+const delete_borrowers = async (req, res, next) => {
   try {
     const result = await deleteBorrowers({
       params: req.params.id,
@@ -56,7 +56,7 @@ const delete_borrowers = async (req, res) => {
 
     res.json(result);
   } catch (error) {
-    res.json(error);
+    next(error);
   }
 };
 

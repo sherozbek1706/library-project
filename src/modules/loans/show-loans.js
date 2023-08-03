@@ -1,13 +1,18 @@
+const { NotFoundError } = require("../../shared/errors");
 const Loans = require("./Loans");
 
-const showLoans = async () => {
-  const loansList = await Loans.find().populate([
+const showLoans = async ({ params }) => {
+  if (params.length != 24) {
+    throw new NotFoundError("Loans Not Found");
+  }
+
+  const loansList = await Loans.find({ _id: params }).populate([
     {
       path: "borrower",
     },
     {
       path: "admin",
-      select: "-password"
+      select: "-password",
     },
     {
       path: "book",
@@ -16,6 +21,10 @@ const showLoans = async () => {
       },
     },
   ]);
+
+  if (!loansList) {
+    throw new NotFoundError("Loans Not Found");
+  }
 
   return loansList;
 };
