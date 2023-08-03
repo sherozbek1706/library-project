@@ -1,14 +1,15 @@
+const { NotFoundError } = require("../../shared/errors");
 const Book = require("./Book");
 
 const showBook = async ({ params }) => {
   if (params.length !== 24) {
-    return { error: "Book Not Found" };
+    throw new NotFoundError("Book Not Found");
   }
 
-  const existed = await Book.findOne({ _id: params })
+  const existed = await Book.findOne({ _id: params });
 
   if (!existed) {
-    return { error: "Book Not Found" };
+    throw new NotFoundError("Book Not Found");
   }
 
   return { data: existed };

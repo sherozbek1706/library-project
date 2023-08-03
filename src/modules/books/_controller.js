@@ -4,53 +4,53 @@ const showBook = require("./show-book");
 const editBook = require("./edit-book");
 const deleteBook = require("./delete-book");
 
-const post_book = async (req, res) => {
+const post_book = async (req, res, next) => {
   try {
     const result = await postBook({ body: req.body });
 
     res.json(result);
   } catch (error) {
-    res.json(error);
+    next(error);
   }
 };
 
-const get_book = async (req, res) => {
+const get_book = async (req, res, next) => {
   try {
     const result = await getBook();
 
     res.json(result);
   } catch (error) {
-    res.json(error);
+    next(error);
   }
 };
 
-const show_book = async (req, res) => {
+const show_book = async (req, res, next) => {
   try {
     const result = await showBook({ params: req.params.id });
 
     res.json(result);
   } catch (error) {
-    res.json(error);
+    next(error);
   }
 };
 
-const edit_book = async (req, res) => {
+const edit_book = async (req, res, next) => {
   try {
     const result = await editBook({ params: req.params.id, body: req.body });
 
     res.json(result);
   } catch (error) {
-    res.json(error);
+    next(error);
   }
 };
 
-const delete_book = async (req, res) => {
+const delete_book = async (req, res, next) => {
   try {
     const result = await deleteBook({ params: req.params.id });
 
     res.json(result);
   } catch (error) {
-    res.json(error);
+    next(error);
   }
 };
 
