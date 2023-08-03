@@ -6,42 +6,42 @@ const showAdmins = require("./show-admin");
 const editAdmin = require("./edit-admin");
 const deleteAdmins = require("./delete-admin");
 
-const login_admins = async (req, res) => {
+const login_admins = async (req, res, next) => {
   try {
     const result = await loginAdmin({ body: req.body });
     res.json(result);
   } catch (error) {
-    res.json(error);
+    next(error);
   }
 };
 
-const post_admins = async (req, res) => {
+const post_admins = async (req, res, next) => {
   try {
     const result = await postAdmin({ body: req.body });
 
     res.json(result);
   } catch (error) {
-    res.json(error);
+    next(error);
   }
 };
 
-const get_admins = async (req, res) => {
+const get_admins = async (req, res, next) => {
   try {
     const result = await getAdmins();
 
     res.json(result);
   } catch (error) {
-    res.json(error);
+    next(error);
   }
 };
 
-const show_admins = async (req, res) => {
+const show_admins = async (req, res, next) => {
   try {
     const result = await showAdmins({ params: req.params.id });
 
     res.json(result);
   } catch (error) {
-    res.json(error);
+    next(error);
   }
 };
 
@@ -51,7 +51,7 @@ const show_admins = async (req, res) => {
  * @param {express.Response} res
  */
 
-const edit_admins = async (req, res) => {
+const edit_admins = async (req, res, next) => {
   try {
     const result = await editAdmin({
       body: req.body,
@@ -63,7 +63,7 @@ const edit_admins = async (req, res) => {
 
     res.json(result);
   } catch (error) {
-    res.json(error);
+    next(error);
   }
 };
 
