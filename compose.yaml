@@ -12,7 +12,13 @@ services:
     build:
       context: ./src
     environment:
-      NODE_ENV: production
+      - NODE_ENV=${NODE_ENV:-development}
+      - PORT=${PORT:-3000}
+      - DB_NAME=${DB_NAME:-library}
+      - DB_HOST=${DB_HOST:-127.0.0.1}
+      - DB_PORT=${DB_PORT:-27017}
+      - JWT_SECRET=${JWT_SECRET:-osiyo}
+      - JWT_EXPIRES_IN=${JWT_EXPIRES_IN:-2h}
     ports:
       - 5000:5000
 
